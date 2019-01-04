@@ -1,0 +1,1028 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="8f9a1457-b6f4-42f8-bc84-2abad42c4540">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="TestService" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="e74ce688-ae36-4f4e-bdf5-77e358f54db3" ParentLink="Module_PortType">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:portType name=&quot;NpcdbPort&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="NpcdbPort" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="462bc0de-b90b-41c0-9302-c4fe25154155" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;SendNpRequest&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="SendNpRequest" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="4afec3c9-fee1-4658-8de0-0015a234687d" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpRequest" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://np.systor.st/npcdb:NpRequest&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="NpRequest" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="b13d150e-8745-4337-8e2f-1a3a59d3efc7" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpRequestAck" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://np.systor.st/npcdb:NpRequestAck&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="NpRequestAck" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="ae833242-9bf1-4736-9f9c-b0513d449720" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpcdbAccessFault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="NpcdbAccessFault" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="246e1bd6-82ec-478c-8463-02697e0e8e3d" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpcdbTechnicalFault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="NpcdbTechnicalFault" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="20eef4e4-9e3b-46a4-804a-5a2d9add8bc3" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.ErrorNotification" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ErrorNotification" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="a1c4a7d5-b76e-49b9-a124-f26f2061a494" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;SendNpRequestAccept&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="SendNpRequestAccept" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="e5abb164-7413-4d17-a05b-917b32017629" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpRequestAccept" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://np.systor.st/npcdb:NpRequestAccept&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="NpRequestAccept" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="19b66e10-4d25-4f7a-9aa1-81bc0fabb0a0" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="TestService.MessageAck" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://np.systor.st/npcdb:MessageAck&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="NpRequestAcceptAck" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="0478393a-2ccf-46e4-8bbc-cf401df85958" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpcdbAccessFault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="NpcdbAccessFault" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="bda2a0eb-760e-4cc4-bcea-b27dcdf8be76" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpcdbTechnicalFault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="NpcdbTechnicalFault" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="b7fb338d-3ed0-44e2-a636-244371614afb" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.ErrorNotification" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ErrorNotification" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="526202db-8ed4-4986-b04f-d6402395a9c7" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;SendNpRequestReject&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="SendNpRequestReject" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="75e3d05e-8b99-46c6-a591-c7c1bf630998" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpRequestReject" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://np.systor.st/npcdb:NpRequestReject&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="NpRequestReject" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="7cbdaaf3-d570-4d86-9208-b203fb95021f" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="TestService.MessageAck" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://np.systor.st/npcdb:MessageAck&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="NpRequestRejectAck" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="b665dfa4-a2e9-42a8-a5a7-3788b90af59e" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpcdbAccessFault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="NpcdbAccessFault" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="0ae7bfa4-35d2-46ea-985e-0f8ed17fda1d" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpcdbTechnicalFault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="NpcdbTechnicalFault" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="f62599c5-326b-4ba9-a308-3919a90dbfcb" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.ErrorNotification" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ErrorNotification" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="d17f1977-9b67-4d27-81bc-88cd079c5fe5" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;SendNpRequestCancel&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="SendNpRequestCancel" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="d1a79983-6546-40a1-8adf-155502d584b2" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpRequestCancel" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://np.systor.st/npcdb:NpRequestCancel&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="NpRequestCancel" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="0541be93-58c6-4125-8672-b1824adb8d3a" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="TestService.MessageAck" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://np.systor.st/npcdb:MessageAck&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="NpRequestCancelAck" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="1bea11ef-5889-40de-b552-f3488f578fae" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpcdbAccessFault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="NpcdbAccessFault" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="490eeb4f-8682-4553-b88a-711940e400f7" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpcdbTechnicalFault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="NpcdbTechnicalFault" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="1baa5be7-7824-4f3d-a3f4-d3e5bcd297a0" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.ErrorNotification" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ErrorNotification" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="6b3b321a-3a13-4121-ba4a-9ef17abf6a43" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;SendNpExecute&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="SendNpExecute" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="8acdf536-a68b-4c6d-929f-bad4654dff06" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpExecute" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://np.systor.st/npcdb:NpExecute&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="NpExecute" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="819ce282-701e-4058-9f4f-e184ddd1e06f" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="TestService.MessageAck" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://np.systor.st/npcdb:MessageAck&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="NpExecuteAck" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="abe06f2a-ac0d-44b7-9e7b-66ab22c90a0a" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpcdbAccessFault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="NpcdbAccessFault" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="7afd8214-ed36-4b27-8d8c-cf563be526bb" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpcdbTechnicalFault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="NpcdbTechnicalFault" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="f1dff396-ff97-425c-ac66-0330dc96ffc1" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.ErrorNotification" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ErrorNotification" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="07e5b4c9-4528-417f-989c-49e89ffbb2cc" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;SendNpExecuteComplete&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="SendNpExecuteComplete" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="90bc44d2-00ef-4694-b8da-d83a3d6d1f05" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpExecuteComplete" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://np.systor.st/npcdb:NpExecuteComplete&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="NpExecuteComplete" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="5dfc26fa-8f55-45d5-8cec-00831d9941d2" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="TestService.MessageAck" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://np.systor.st/npcdb:MessageAck&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="NpExecuteCompleteAck" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="211cfcfe-8c83-4920-82eb-a557e151bff6" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpcdbAccessFault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="NpcdbAccessFault" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="bebaacb3-950e-4851-90a9-3819bb99710d" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpcdbTechnicalFault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="NpcdbTechnicalFault" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="44f244a2-eb76-4334-87de-aa577f24d7e1" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.ErrorNotification" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ErrorNotification" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="107e20b2-703c-4562-b625-f514e45b0cb7" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;SendNpDeactivate&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="SendNpDeactivate" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="bf19a925-3b02-44f6-b281-2c0534dba349" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpDeactivate" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://np.systor.st/npcdb:NpDeactivate&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="NpDeactivate" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="1d1cfb81-caa8-4d87-ba52-d2e5cd70d796" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpDeactivateAck" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://np.systor.st/npcdb:NpDeactivateAck&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="NpDeactivateAck" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="499f36ea-ea8e-4ee2-b8bf-37de65b384f4" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpcdbAccessFault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="NpcdbAccessFault" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="c26b4393-2c8b-4e93-b211-3de8b58ec83d" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpcdbTechnicalFault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="NpcdbTechnicalFault" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="123fbd85-b495-449c-8d90-057d2cf3f81f" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.ErrorNotification" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ErrorNotification" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="868c6865-c283-473c-9b77-ae59a95b64df" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;SendNpDeactivateComplete&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="SendNpDeactivateComplete" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="2806c461-861c-4d0b-b952-4177915cb360" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpDeactivateComplete" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://np.systor.st/npcdb:NpDeactivateComplete&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="NpDeactivateComplete" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="bcd07e29-d8da-4760-88ea-61adbb7796d8" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="TestService.MessageAck" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://np.systor.st/npcdb:MessageAck&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="NpDeactivateCompleteAck" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="50e986f3-1566-4eeb-9d90-f107455e68cf" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpcdbAccessFault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="NpcdbAccessFault" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="d772823f-2e0f-4ec0-91fe-12c62d07fa88" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpcdbTechnicalFault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="NpcdbTechnicalFault" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="4115a286-cf37-4dba-b679-beb9d4a2bdc6" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.ErrorNotification" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ErrorNotification" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="33f30c3a-e55c-46ce-a94a-ba23d8510de0" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;SendNpQuery&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="SendNpQuery" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="d0e7a3db-3bb1-430b-b462-4a4a0b70b6d8" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpQuery" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://np.systor.st/npcdb:NpQuery&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="NpQuery" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="a9e8de49-777c-4eb4-b0c3-338be78da5fa" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="TestService.MessageAck" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://np.systor.st/npcdb:MessageAck&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="NpQueryAck" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="e0d526b4-0c21-4b33-a629-eb5a110c0778" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpcdbAccessFault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="NpcdbAccessFault" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="783cc8c1-56e2-41e1-84d8-0529d68e588a" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpcdbTechnicalFault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="NpcdbTechnicalFault" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="8e0ecf42-b1ae-4748-bd75-c637a5c06db8" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.ErrorNotification" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ErrorNotification" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="6ab6cb1c-c9cf-4674-bbe6-30e9e926cbde" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;SendNpBillingResolution&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="SendNpBillingResolution" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="5f47a263-2377-4f4b-8135-b0d8dc8fffe6" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpBillingResolution" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://np.systor.st/npcdb:NpBillingResolution&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="NpBillingResolution" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="5ef38ed5-2762-448d-8102-cc98bf5b31b1" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="TestService.MessageAck" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://np.systor.st/npcdb:MessageAck&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="NpBillingResolutionAck" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="04a29b9d-5914-461d-9a40-b1efb802b350" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpcdbAccessFault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="NpcdbAccessFault" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="4a9321ce-5c04-4ca8-819d-b9ddf0b21675" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpcdbTechnicalFault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="NpcdbTechnicalFault" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="fe9c9b77-3d61-4b11-a3a6-6f4ba5bca2b0" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.ErrorNotification" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ErrorNotification" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="859c7a54-9ec6-49e8-bf9a-7c7a7fb44236" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;SendNpBillingResolutionReceived&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="SendNpBillingResolutionReceived" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="39dafda4-d8cb-45f1-8b62-704f3890e632" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpBillingResolutionReceived" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://np.systor.st/npcdb:NpBillingResolutionReceived&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="NpBillingResolutionReceived" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="496b5388-97e5-4769-b45f-509f288eccc8" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="TestService.MessageAck" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://np.systor.st/npcdb:MessageAck&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="NpBillingResolutionReceivedAck" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="ace61edf-ef4c-4d82-93d3-c9adac68e0ed" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpcdbAccessFault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="NpcdbAccessFault" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="f575be5e-280a-4723-a9e7-dc2873719103" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpcdbTechnicalFault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="NpcdbTechnicalFault" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="cdc880ce-4e3b-4bcb-ac6f-94ea22e011d3" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.ErrorNotification" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ErrorNotification" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="b82b744c-2560-4c42-bc8a-e07f6d1511f6" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;SendNpBillingResolutionEnd&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="SendNpBillingResolutionEnd" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="c6b13c56-eaa0-484a-8162-6241d26bf3e9" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpBillingResolutionEnd" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://np.systor.st/npcdb:NpBillingResolutionEnd&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="NpBillingResolutionEnd" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="ce0f2286-6604-4ac6-8c2b-e0766391adc9" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="TestService.MessageAck" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://np.systor.st/npcdb:MessageAck&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="NpBillingResolutionEndAck" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="e05ef778-842e-4425-ab17-50d3df056b88" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpcdbAccessFault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="NpcdbAccessFault" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="69e0d674-3822-4792-a686-e21177991720" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpcdbTechnicalFault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="NpcdbTechnicalFault" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="6809b771-24fa-47d5-926d-ea1b7625b076" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.ErrorNotification" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ErrorNotification" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="9457d20c-fca9-449a-93ee-160b7e7151be" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;SendNpBillingResolutionAlert&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="SendNpBillingResolutionAlert" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="76a78cfa-07b8-4181-9b97-3dbf9fe6d18d" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpBillingResolutionAlert" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://np.systor.st/npcdb:NpBillingResolutionAlert&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="NpBillingResolutionAlert" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="cf1e5400-e013-412c-844b-5b5b0534016a" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="TestService.MessageAck" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://np.systor.st/npcdb:MessageAck&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="NpBillingResolutionAlertAck" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="42b45568-691a-4848-bf91-a732f6ebe8a6" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpcdbAccessFault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="NpcdbAccessFault" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="528dab03-d8f0-47be-907a-efacbcd25f32" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpcdbTechnicalFault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="NpcdbTechnicalFault" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="70f5f939-ec3c-4665-aadc-f6ec8a6f68e8" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.ErrorNotification" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ErrorNotification" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="b72e980d-df9e-41a1-b652-2fac2816d74f" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;SendNpBillingResolutionAlertReceived&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="SendNpBillingResolutionAlertReceived" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="6a64483d-9e74-4104-9504-ac0efc78b834" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpBillingResolutionAlertReceived" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://np.systor.st/npcdb:NpBillingResolutionAlertReceived&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="NpBillingResolutionAlertReceived" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="3170104e-7465-40ff-ba02-981e0f6f73c0" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="TestService.MessageAck" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://np.systor.st/npcdb:MessageAck&quot;/&gt;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="NpBillingResolutionAlertReceivedAck" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="d5f977d9-5c91-46b0-9cda-bf71f8380879" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpcdbAccessFault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="NpcdbAccessFault" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="9dcf995c-e7f9-4e4d-b7d4-74cbbf7ff1fc" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.NpcdbTechnicalFault" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="NpcdbTechnicalFault" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="e574b65d-4339-4799-b54d-a19ddb19ff21" ParentLink="OperationDeclaration_FaultMessageRef">
+                    <om:Property Name="Ref" Value="TestService.ErrorNotification" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ErrorNotification" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="6e1a1fe9-e621-4927-95ee-7e4727eed169" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;NpBillingResolutionReceived&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="NpBillingResolutionReceived" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="c8d3513d-2600-4d53-b093-3e3645c1b4af" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="TestService.NpcdbService_np_systor_st_npcdb.NpBillingResolutionReceived" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;npBillRec&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="npBillRec" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="a95d7019-dbff-4027-a328-e6fd7a7b4fee" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;NpExecute&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="NpExecute" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="ca0d3a1b-a7e7-430b-aa1b-6f7ddc9b7074" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="TestService.NpcdbService_np_systor_st_npcdb.NpExecute" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;npEx&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="npEx" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="7688eb48-59eb-4769-905c-fee9e8a248c1" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;NpDeactivateAck&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="NpDeactivateAck" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="28af089b-9886-4dda-9442-9550eb8ef987" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="TestService.NpcdbService_np_systor_st_npcdb.NpDeactivateAck" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;npDeactAck&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="npDeactAck" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="69ac38ee-d474-4c1f-8c8a-44ff524c675f" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;NpBillingResolutionEnd&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="NpBillingResolutionEnd" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="cec129a0-6d31-492d-b45e-d70efe717d3d" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="TestService.NpcdbService_np_systor_st_npcdb.NpBillingResolutionEnd" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;npBillEnd&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="npBillEnd" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="54166d33-39db-4097-9e34-84e4da462e30" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;NpcdbTechnicalFault&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="NpcdbTechnicalFault" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="3063142d-4a41-4d86-81fa-911f682436a6" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="TestService..TechnicalFault" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;technicalFault&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="technicalFault" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="850df04b-43b2-4b68-8e19-e79b9583fa96" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;NpQuery&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="NpQuery" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="77aceb86-c85d-41a7-8b6b-501ae3ed3593" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="TestService.NpcdbService_np_systor_st_npcdb.NpQuery" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;npQuery&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="npQuery" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="1ebec31e-eadc-42ee-84ea-eb510f9c97ea" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;NpRequestReject&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="NpRequestReject" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="be37047c-95c0-41f6-bdb1-c34c18ca78e9" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="TestService.NpcdbService_np_systor_st_npcdb.NpRequestReject" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;npReqRej&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="npReqRej" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="5e67cd68-23c7-48e9-8df4-b64accf74fee" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;NpExecuteComplete&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="NpExecuteComplete" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="b0fb703e-9942-40ad-a958-3ec22c2e5a92" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="TestService.NpcdbService_np_systor_st_npcdb.NpExecuteComplete" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;npExComp&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="npExComp" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="b82a43bd-3360-4d99-ba25-c99e76ccd693" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;NpRequestAccept&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="NpRequestAccept" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="3ed69dce-1407-4f44-b2d0-02b26d83e9fb" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="TestService.NpcdbService_np_systor_st_npcdb.NpRequestAccept" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;npReqAcc&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="npReqAcc" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="17ab2b8d-d646-4341-aef1-4555aa7ebade" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;ErrorNotification&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="ErrorNotification" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="49425133-9f6d-429d-8a53-17e15fc3505f" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="TestService.NpcdbService_np_systor_st_npcdb.ErrorNotification" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;error&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="error" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="ab67d621-71b7-4d82-910a-dd75879382d2" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;NpRequestAck&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="NpRequestAck" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="ca02bf54-155a-4489-8e78-f40dd17f7100" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="TestService.NpcdbService_np_systor_st_npcdb.NpRequestAck" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;npReqAck&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="npReqAck" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="c0e7939c-905f-4c4d-ab42-d4b46a28aacc" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;NpRequestCancel&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="NpRequestCancel" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="f630411c-a80c-4e94-926a-ab9c26023004" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="TestService.NpcdbService_np_systor_st_npcdb.NpRequestCancel" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;npReqCan&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="npReqCan" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="cce1de56-1216-43f7-a2a0-928a0c2567f5" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;NpDeactivate&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="NpDeactivate" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="2b1e2e7d-6555-48ee-8037-ac4e8b5cad64" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="TestService.NpcdbService_np_systor_st_npcdb.NpDeactivate" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;npDeact&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="npDeact" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="5b0e9d15-5979-4e31-972d-d4038bac4884" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;MessageAck&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="MessageAck" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="ad4c4da9-a6a9-48e1-94d9-cb9008d0c1e6" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="TestService.NpcdbService_np_systor_st_npcdb.MessageAck" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;ack&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="ack" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="3c4ecf17-420b-49a2-ab3e-b02225338aee" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;NpRequest&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="NpRequest" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="4541c598-9dcb-48f9-a52a-000a986149b5" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="TestService.NpcdbService_np_systor_st_npcdb.NpRequest" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;npReq&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="npReq" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="2d57c4c4-e91b-48ee-b11e-7b61910f263c" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;NpDeactivateComplete&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="NpDeactivateComplete" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="00e89c43-6054-49b2-a279-ecc43cab3a0b" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="TestService.NpcdbService_np_systor_st_npcdb.NpDeactivateComplete" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;npDeactComp&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="npDeactComp" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="4c6dd144-dedc-4faa-93d1-142851c5c9b5" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;NpBillingResolutionAlert&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="NpBillingResolutionAlert" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="bfdaf4b6-c16e-4a4e-a4d0-306fcff88de4" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="TestService.NpcdbService_np_systor_st_npcdb.NpBillingResolutionAlert" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;npBillAlert&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="npBillAlert" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="f3a81303-118a-4181-a315-9b8dff84f580" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;NpBillingResolution&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="NpBillingResolution" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="5391f752-64d8-4d05-8d34-235d4770e0ff" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="TestService.NpcdbService_np_systor_st_npcdb.NpBillingResolution" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;npBill&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="npBill" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="9c513faf-0794-4192-9c3b-a07106a3e5dc" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;NpBillingResolutionAlertReceived&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="NpBillingResolutionAlertReceived" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="a4c11860-7693-4120-88ab-5c19cdfd66e5" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="TestService.NpcdbService_np_systor_st_npcdb.NpBillingResolutionAlertReceived" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;npBillAlertRec&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="npBillAlertRec" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="9bf8ad3a-d912-422d-b679-59dc7eceaf07" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;NpcdbAccessFault&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="NpcdbAccessFault" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="22c46acb-abb8-4df6-b200-4891ac838b59" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="TestService..AccessFault" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;accessFault&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="accessFault" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="7f62b0a9-93be-4c35-a1bc-6ce4bcfc3f53" ParentLink="Module_ServiceDeclaration">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:service name=&quot;NpcdbService&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="NpcdbServiceClient" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="ServiceBody" OID="52634979-9208-4579-b0c7-df3abe8a85ec" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module TestService
+{
+    internal messagetype NpBillingResolutionReceived
+    {
+        body NpcdbService_np_systor_st_npcdb.NpBillingResolutionReceived npBillRec;
+    };
+    internal messagetype NpExecute
+    {
+        body NpcdbService_np_systor_st_npcdb.NpExecute npEx;
+    };
+    internal messagetype NpDeactivateAck
+    {
+        body NpcdbService_np_systor_st_npcdb.NpDeactivateAck npDeactAck;
+    };
+    internal messagetype NpBillingResolutionEnd
+    {
+        body NpcdbService_np_systor_st_npcdb.NpBillingResolutionEnd npBillEnd;
+    };
+    internal messagetype NpcdbTechnicalFault
+    {
+        body .TechnicalFault technicalFault;
+    };
+    internal messagetype NpQuery
+    {
+        body NpcdbService_np_systor_st_npcdb.NpQuery npQuery;
+    };
+    internal messagetype NpRequestReject
+    {
+        body NpcdbService_np_systor_st_npcdb.NpRequestReject npReqRej;
+    };
+    internal messagetype NpExecuteComplete
+    {
+        body NpcdbService_np_systor_st_npcdb.NpExecuteComplete npExComp;
+    };
+    internal messagetype NpRequestAccept
+    {
+        body NpcdbService_np_systor_st_npcdb.NpRequestAccept npReqAcc;
+    };
+    internal messagetype ErrorNotification
+    {
+        body NpcdbService_np_systor_st_npcdb.ErrorNotification error;
+    };
+    internal messagetype NpRequestAck
+    {
+        body NpcdbService_np_systor_st_npcdb.NpRequestAck npReqAck;
+    };
+    internal messagetype NpRequestCancel
+    {
+        body NpcdbService_np_systor_st_npcdb.NpRequestCancel npReqCan;
+    };
+    internal messagetype NpDeactivate
+    {
+        body NpcdbService_np_systor_st_npcdb.NpDeactivate npDeact;
+    };
+    internal messagetype MessageAck
+    {
+        body NpcdbService_np_systor_st_npcdb.MessageAck ack;
+    };
+    internal messagetype NpRequest
+    {
+        body NpcdbService_np_systor_st_npcdb.NpRequest npReq;
+    };
+    internal messagetype NpDeactivateComplete
+    {
+        body NpcdbService_np_systor_st_npcdb.NpDeactivateComplete npDeactComp;
+    };
+    internal messagetype NpBillingResolutionAlert
+    {
+        body NpcdbService_np_systor_st_npcdb.NpBillingResolutionAlert npBillAlert;
+    };
+    internal messagetype NpBillingResolution
+    {
+        body NpcdbService_np_systor_st_npcdb.NpBillingResolution npBill;
+    };
+    internal messagetype NpBillingResolutionAlertReceived
+    {
+        body NpcdbService_np_systor_st_npcdb.NpBillingResolutionAlertReceived npBillAlertRec;
+    };
+    internal messagetype NpcdbAccessFault
+    {
+        body .AccessFault accessFault;
+    };
+    internal porttype NpcdbPort
+    {
+        requestresponse SendNpRequest
+        {
+            NpRequest, NpRequestAck, NpcdbAccessFault = NpcdbAccessFault, NpcdbTechnicalFault = NpcdbTechnicalFault, ErrorNotification = ErrorNotification
+        };
+        requestresponse SendNpRequestAccept
+        {
+            NpRequestAccept, MessageAck, NpcdbAccessFault = NpcdbAccessFault, NpcdbTechnicalFault = NpcdbTechnicalFault, ErrorNotification = ErrorNotification
+        };
+        requestresponse SendNpRequestReject
+        {
+            NpRequestReject, MessageAck, NpcdbAccessFault = NpcdbAccessFault, NpcdbTechnicalFault = NpcdbTechnicalFault, ErrorNotification = ErrorNotification
+        };
+        requestresponse SendNpRequestCancel
+        {
+            NpRequestCancel, MessageAck, NpcdbAccessFault = NpcdbAccessFault, NpcdbTechnicalFault = NpcdbTechnicalFault, ErrorNotification = ErrorNotification
+        };
+        requestresponse SendNpExecute
+        {
+            NpExecute, MessageAck, NpcdbAccessFault = NpcdbAccessFault, NpcdbTechnicalFault = NpcdbTechnicalFault, ErrorNotification = ErrorNotification
+        };
+        requestresponse SendNpExecuteComplete
+        {
+            NpExecuteComplete, MessageAck, NpcdbAccessFault = NpcdbAccessFault, NpcdbTechnicalFault = NpcdbTechnicalFault, ErrorNotification = ErrorNotification
+        };
+        requestresponse SendNpDeactivate
+        {
+            NpDeactivate, NpDeactivateAck, NpcdbAccessFault = NpcdbAccessFault, NpcdbTechnicalFault = NpcdbTechnicalFault, ErrorNotification = ErrorNotification
+        };
+        requestresponse SendNpDeactivateComplete
+        {
+            NpDeactivateComplete, MessageAck, NpcdbAccessFault = NpcdbAccessFault, NpcdbTechnicalFault = NpcdbTechnicalFault, ErrorNotification = ErrorNotification
+        };
+        requestresponse SendNpQuery
+        {
+            NpQuery, MessageAck, NpcdbAccessFault = NpcdbAccessFault, NpcdbTechnicalFault = NpcdbTechnicalFault, ErrorNotification = ErrorNotification
+        };
+        requestresponse SendNpBillingResolution
+        {
+            NpBillingResolution, MessageAck, NpcdbAccessFault = NpcdbAccessFault, NpcdbTechnicalFault = NpcdbTechnicalFault, ErrorNotification = ErrorNotification
+        };
+        requestresponse SendNpBillingResolutionReceived
+        {
+            NpBillingResolutionReceived, MessageAck, NpcdbAccessFault = NpcdbAccessFault, NpcdbTechnicalFault = NpcdbTechnicalFault, ErrorNotification = ErrorNotification
+        };
+        requestresponse SendNpBillingResolutionEnd
+        {
+            NpBillingResolutionEnd, MessageAck, NpcdbAccessFault = NpcdbAccessFault, NpcdbTechnicalFault = NpcdbTechnicalFault, ErrorNotification = ErrorNotification
+        };
+        requestresponse SendNpBillingResolutionAlert
+        {
+            NpBillingResolutionAlert, MessageAck, NpcdbAccessFault = NpcdbAccessFault, NpcdbTechnicalFault = NpcdbTechnicalFault, ErrorNotification = ErrorNotification
+        };
+        requestresponse SendNpBillingResolutionAlertReceived
+        {
+            NpBillingResolutionAlertReceived, MessageAck, NpcdbAccessFault = NpcdbAccessFault, NpcdbTechnicalFault = NpcdbTechnicalFault, ErrorNotification = ErrorNotification
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service NpcdbServiceClient
+    {
+        body ()
+        {
+        }
+    }
+}
+

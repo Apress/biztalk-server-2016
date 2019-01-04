@@ -1,0 +1,4 @@
+C:\Users\Administrator\Documents\BOOK\BooksSolution\BooksOrders\BooksOrders\bin\Debug\BooksOrders.dll
+C:\Users\Administrator\Documents\BOOK\BooksSolution\BooksOrders\BooksOrders\bin\Debug\BooksOrders.pdb
+C:\Users\Administrator\Documents\BOOK\BooksSolution\BooksOrders\BooksOrders\obj\Debug\BooksOrders.dll
+C:\Users\Administrator\Documents\BOOK\BooksSolution\BooksOrders\BooksOrders\obj\Debug\BooksOrders.pdb

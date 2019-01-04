@@ -1,0 +1,10 @@
+<BTSLoadTest xmlns="http://Microsoft.BizTalk.Samples.BTSLoadTest">
+<MessageText>
+This text will be received by the WCF Adapter as a text
+This text will be received by the WCF Adapter as a test
+This text will be received by the WCF Adapter as a test
+This text will be received by the WCF Adapter as a test
+This text will be received by the WCF Adapter as a test
+This text will be received by the WCF Adapter as a test
+</MessageText>
+</BTSLoadTest>

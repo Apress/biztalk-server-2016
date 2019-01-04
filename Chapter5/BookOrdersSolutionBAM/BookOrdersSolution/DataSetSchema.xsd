@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:appinfo>
+      <fileNameHint xmlns="http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd">DataSetSchema</fileNameHint>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:complexType name="DataSet">
+    <xs:annotation>
+      <xs:appinfo>
+        <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+        </ActualType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:any />
+      <xs:any />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DataSet" nillable="true" type="tns:DataSet" />
+  <xs:complexType name="ArrayOfDataSet">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DataSet" type="tns:DataSet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDataSet" nillable="true" type="tns:ArrayOfDataSet" />
+</xs:schema>

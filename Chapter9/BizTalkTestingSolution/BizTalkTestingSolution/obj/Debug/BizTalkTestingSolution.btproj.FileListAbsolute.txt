@@ -1,0 +1,4 @@
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkTestingSolution\BizTalkTestingSolution\bin\Debug\BizTalkTestingSolution.dll
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkTestingSolution\BizTalkTestingSolution\bin\Debug\BizTalkTestingSolution.pdb
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkTestingSolution\BizTalkTestingSolution\obj\Debug\BizTalkTestingSolution.dll
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkTestingSolution\BizTalkTestingSolution\obj\Debug\BizTalkTestingSolution.pdb

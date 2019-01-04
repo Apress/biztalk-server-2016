@@ -1,0 +1,4 @@
+C:\APRESS\Chapter8\WebServiceBookOrders\WebServiceBookOrders\WebServiceBookOrders\bin\Debug\WebServiceBookOrders.dll
+C:\APRESS\Chapter8\WebServiceBookOrders\WebServiceBookOrders\WebServiceBookOrders\bin\Debug\WebServiceBookOrders.pdb
+C:\APRESS\Chapter8\WebServiceBookOrders\WebServiceBookOrders\WebServiceBookOrders\obj\Debug\WebServiceBookOrders.dll
+C:\APRESS\Chapter8\WebServiceBookOrders\WebServiceBookOrders\WebServiceBookOrders\obj\Debug\WebServiceBookOrders.pdb

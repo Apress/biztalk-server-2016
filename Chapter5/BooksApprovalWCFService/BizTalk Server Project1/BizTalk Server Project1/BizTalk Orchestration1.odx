@@ -1,0 +1,101 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="b93e67a7-0096-4d3b-b3c1-7463bb3f4398" LowerBound="1.1" HigherBound="24.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BizTalk_Server_Project1" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="b7245803-a374-454d-b6fc-54aae4c9d55b" ParentLink="Module_ServiceDeclaration" LowerBound="4.1" HigherBound="23.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="BizTalk_Orchestration1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="ServiceBody" OID="80793df1-8069-48f4-981b-f42c3eade7cf" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="d7aea7f0-cfab-4a5d-8946-4e44e341f6af" ParentLink="ServiceBody_Statement" LowerBound="11.1" HigherBound="13.1">
+                    <om:Property Name="Activate" Value="False" />
+                    <om:Property Name="MessageName" Value="Message_IN" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Construct" OID="dfd3a1c3-4b6d-4d2a-a70d-5f67d41bbdb7" ParentLink="ServiceBody_Statement" LowerBound="13.1" HigherBound="19.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ConstructMessage_1" />
+                    <om:Property Name="Signal" Value="False" />
+                    <om:Element Type="Transform" OID="1e07d18b-31d3-4541-b85e-1ef9b9049c4d" ParentLink="ComplexStatement_Statement" LowerBound="16.1" HigherBound="18.1">
+                        <om:Property Name="ClassName" Value="BizTalk_Server_Project1.Transform_1" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Transform_1" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="MessagePartRef" OID="37f96e29-9eb8-4072-bb15-4a4bf091e6e8" ParentLink="Transform_InputMessagePartRef" LowerBound="17.80" HigherBound="17.90">
+                            <om:Property Name="MessageRef" Value="Message_IN" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_1" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessagePartRef" OID="430f8f9f-a984-4383-8fbc-8fe3438468bb" ParentLink="Transform_OutputMessagePartRef" LowerBound="17.28" HigherBound="17.39">
+                            <om:Property Name="MessageRef" Value="Message_OUT" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_2" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="486757cd-a960-4c58-9c2f-6983797e2fa2" ParentLink="Construct_MessageRef" LowerBound="14.23" HigherBound="14.34">
+                        <om:Property Name="Ref" Value="Message_OUT" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="d0844d2a-49f3-4642-b54b-e0aad5aca91c" ParentLink="ServiceBody_Statement" LowerBound="19.1" HigherBound="21.1">
+                    <om:Property Name="MessageName" Value="Message_OUT" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="b7878563-5ec1-41aa-bea4-afd483702955" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="7.1" HigherBound="8.1">
+                <om:Property Name="Type" Value="BizTalk_Server_Project1.Schema1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_IN" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="52d51996-7d9a-48bd-8ebe-f5c75c880d6d" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="8.1" HigherBound="9.1">
+                <om:Property Name="Type" Value="BizTalk_Server_Project1.CustomerOUTxsd" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_OUT" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BizTalk_Server_Project1
+{
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service BizTalk_Orchestration1
+    {
+        message Schema1 Message_IN;
+        message CustomerOUTxsd Message_OUT;
+        body ()
+        {
+
+#error "No Operation."
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("dfd3a1c3-4b6d-4d2a-a70d-5f67d41bbdb7")]
+            construct Message_OUT
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("1e07d18b-31d3-4541-b85e-1ef9b9049c4d")]
+                transform (Message_OUT) = BizTalk_Server_Project1.Transform_1 (Message_IN);
+            }
+
+#error "No Operation."
+        }
+    }
+}
+

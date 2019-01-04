@@ -1,0 +1,6 @@
+C:\APRESS\Chapter5\BooksApprovalWCFService\BooksApprovalWCFService\BooksApprovalWCFService\obj\Debug\BooksApprovalWCFService.csprojResolveAssemblyReference.cache
+C:\APRESS\Chapter5\BooksApprovalWCFService\BooksApprovalWCFService\BooksApprovalWCFService\bin\BooksApprovalWCFService.dll.config
+C:\APRESS\Chapter5\BooksApprovalWCFService\BooksApprovalWCFService\BooksApprovalWCFService\bin\BooksApprovalWCFService.dll
+C:\APRESS\Chapter5\BooksApprovalWCFService\BooksApprovalWCFService\BooksApprovalWCFService\bin\BooksApprovalWCFService.pdb
+C:\APRESS\Chapter5\BooksApprovalWCFService\BooksApprovalWCFService\BooksApprovalWCFService\obj\Debug\BooksApprovalWCFService.dll
+C:\APRESS\Chapter5\BooksApprovalWCFService\BooksApprovalWCFService\BooksApprovalWCFService\obj\Debug\BooksApprovalWCFService.pdb

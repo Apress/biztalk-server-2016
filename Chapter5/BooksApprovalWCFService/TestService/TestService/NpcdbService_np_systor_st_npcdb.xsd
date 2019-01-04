@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns="http://np.systor.st/npcdb" xmlns:commontypes="http://np.systor.st/commontypes" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://np.systor.st/npcdb" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="" namespace="http://np.systor.st/commontypes" />
+  <xsd:annotation>
+    <xsd:documentation xml:lang="en">
+					Date: $Date: 2011/06/15 06:48:59 $
+					Author:	$Author: karl $
+					Revision: $Id: sp2npcdb.wsdl,v 1.2.2.1 2011/06/15 06:48:59 karl Exp $
+					Log: $Log: sp2npcdb.wsdl,v $
+					Log: Revision 1.2.2.1  2011/06/15 06:48:59  karl
+					Log: no message
+					Log:
+					Log: Revision 1.2  2011/05/13 11:40:35  Administrator
+					Log: Merged with NPBH_DEV_1-0 110513
+					Log:
+					Log: Revision 1.1.2.5  2011/04/17 18:39:17  karl
+					Log: New message type: NpBillingResolutionAlertReceived
+					Log:
+					Log: Revision 1.1.2.4  2011/04/10 19:47:46  karl
+					Log: MessageAck defined as output message for all methods with no specific output, types import (xsd) moved to schema section.
+					Log:
+					Log: Revision 1.1.2.2  2011/04/06 10:16:49  karl
+					Log: NPQueryComplete response message removed (now an asynchronous message)
+					Log:
+					Log: Revision 1.1.2.1  2011/03/31 07:02:48  karl
+					Log: Initial version (draft)
+					Log:
+				</xsd:documentation>
+  </xsd:annotation>
+  <xsd:complexType name="NpRequestAck_Type">
+    <xsd:sequence>
+      <xsd:element name="ServiceType" type="commontypes:ServiceType" />
+      <xsd:element name="MessageCode" type="commontypes:MessageCode" />
+      <xsd:element name="Number" type="commontypes:Number" />
+      <xsd:element name="PortID" type="commontypes:PortID" />
+      <xsd:element name="SubmissionID" type="commontypes:SubmissionID" />
+      <xsd:element name="DonorID" type="commontypes:OperatorID" />
+      <xsd:element name="RecipientID" type="commontypes:OperatorID" />
+      <xsd:element name="OriginationID" type="commontypes:OperatorID" />
+      <xsd:element name="DestinationID" type="commontypes:OperatorID" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="NpExecute_Type">
+    <xsd:sequence>
+      <xsd:element name="ServiceType" type="commontypes:ServiceType" />
+      <xsd:element name="MessageCode" type="commontypes:MessageCode" />
+      <xsd:element name="Number" type="commontypes:Number" />
+      <xsd:element name="PortID" type="commontypes:PortID" />
+      <xsd:element name="DonorID" type="commontypes:OperatorID" />
+      <xsd:element name="RecipientID" type="commontypes:OperatorID" />
+      <xsd:element name="OriginationID" type="commontypes:OperatorID" />
+      <xsd:element name="DestinationID" type="commontypes:OperatorID" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="NpDeactivate_Type">
+    <xsd:sequence>
+      <xsd:element name="ServiceType" type="commontypes:ServiceType" />
+      <xsd:element name="MessageCode" type="commontypes:MessageCode" />
+      <xsd:element name="Number" type="commontypes:Number" />
+      <xsd:element name="SubscriptionNetworkID" type="commontypes:OperatorID" />
+      <xsd:element name="BlockID" type="commontypes:OperatorID" />
+      <xsd:element name="OriginationID" type="commontypes:OperatorID" />
+      <xsd:element name="DestinationID" type="commontypes:OperatorID" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="NpDeactivateAck_Type">
+    <xsd:sequence>
+      <xsd:element name="ServiceType" type="commontypes:ServiceType" />
+      <xsd:element name="MessageCode" type="commontypes:MessageCode" />
+      <xsd:element name="Number" type="commontypes:Number" />
+      <xsd:element name="PortID" type="commontypes:PortID" />
+      <xsd:element name="SubscriptionNetworkID" type="commontypes:OperatorID" />
+      <xsd:element name="BlockID" type="commontypes:OperatorID" />
+      <xsd:element name="OriginationID" type="commontypes:OperatorID" />
+      <xsd:element name="DestinationID" type="commontypes:OperatorID" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="NpQuery_Type">
+    <xsd:sequence>
+      <xsd:element name="MessageCode" type="commontypes:MessageCode" />
+      <xsd:element minOccurs="0" name="DateFrom" type="xsd:dateTime" />
+      <xsd:element minOccurs="0" name="DateTo" type="xsd:dateTime" />
+      <xsd:element minOccurs="0" name="NumberFrom" type="commontypes:Number" />
+      <xsd:element minOccurs="0" name="NumberTo" type="commontypes:Number" />
+      <xsd:element minOccurs="0" name="OperatorID" type="commontypes:OperatorID" />
+      <xsd:element minOccurs="0" name="Comments" type="xsd:string" />
+      <xsd:element name="OriginationID" type="commontypes:OperatorID" />
+      <xsd:element name="DestinationID" type="commontypes:OperatorID" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="MessageAck" type="commontypes:MessageAck_Type" />
+  <xsd:element name="NpRequest" type="commontypes:NpRequest_Type" />
+  <xsd:element name="NpRequestAck" type="NpRequestAck_Type" />
+  <xsd:element name="NpRequestAccept" type="commontypes:NpRequestAccept_Type" />
+  <xsd:element name="NpRequestAcceptAck" type="commontypes:MessageAck_Type" />
+  <xsd:element name="NpRequestReject" type="commontypes:NpRequestReject_Type" />
+  <xsd:element name="NpRequestCancel" type="commontypes:NpRequestCancel_Type" />
+  <xsd:element name="NpExecute" type="NpExecute_Type" />
+  <xsd:element name="NpExecuteComplete" type="commontypes:NpExecuteComplete_Type" />
+  <xsd:element name="NpDeactivate" type="NpDeactivate_Type" />
+  <xsd:element name="NpDeactivateAck" type="NpDeactivateAck_Type" />
+  <xsd:element name="NpDeactivateComplete" type="commontypes:NpDeactivateComplete_Type" />
+  <xsd:element name="NpQuery" type="NpQuery_Type" />
+  <xsd:element name="NpBillingResolution" type="commontypes:NpBillingResolution_Type" />
+  <xsd:element name="NpBillingResolutionReceived" type="commontypes:NpBillingResolutionReceived_Type" />
+  <xsd:element name="NpBillingResolutionEnd" type="commontypes:NpBillingResolutionEnd_Type" />
+  <xsd:element name="NpBillingResolutionAlert" type="commontypes:NpBillingResolutionAlert_Type" />
+  <xsd:element name="NpBillingResolutionAlertReceived" type="commontypes:NpBillingResolutionAlertReceived_Type" />
+  <xsd:element name="ErrorNotification" type="commontypes:ErrorNotification_Type" />
+</xsd:schema>

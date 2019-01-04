@@ -1,0 +1,4 @@
+BO987654,Agustin Mantaras,2013-10-30
+5Avenida       Madrid        2898052
+BOOKS0324565555|Developing BizTalk Solutions|6|55
+BOOKS0324565545|Admin BizTalk Solutions|6|55

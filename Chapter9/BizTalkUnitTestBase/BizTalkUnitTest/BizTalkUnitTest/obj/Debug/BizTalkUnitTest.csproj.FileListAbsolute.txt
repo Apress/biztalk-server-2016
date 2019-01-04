@@ -1,0 +1,13 @@
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTest\BizTalkUnitTest\BizTalkUnitTest\bin\Debug\BizTalkUnitTest.dll.config
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTest\BizTalkUnitTest\BizTalkUnitTest\bin\Debug\BizTalkUnitTest.dll
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTest\BizTalkUnitTest\BizTalkUnitTest\bin\Debug\BizTalkUnitTest.pdb
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTest\BizTalkUnitTest\BizTalkUnitTest\obj\Debug\BizTalkUnitTest.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTest\BizTalkUnitTest\BizTalkUnitTest\obj\Debug\BizTalkUnitTest.dll
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTest\BizTalkUnitTest\BizTalkUnitTest\obj\Debug\BizTalkUnitTest.pdb
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTest\BizTalkUnitTest\BizTalkUnitTest\bin\Debug\LoadTest1.loadtest
+C:\APRESS\Chapter8\BizTalkUnitTest\BizTalkUnitTest\BizTalkUnitTest\bin\Debug\LoadTest1.loadtest
+C:\APRESS\Chapter8\BizTalkUnitTest\BizTalkUnitTest\BizTalkUnitTest\bin\Debug\BizTalkUnitTest.dll.config
+C:\APRESS\Chapter8\BizTalkUnitTest\BizTalkUnitTest\BizTalkUnitTest\bin\Debug\BizTalkUnitTest.dll
+C:\APRESS\Chapter8\BizTalkUnitTest\BizTalkUnitTest\BizTalkUnitTest\bin\Debug\BizTalkUnitTest.pdb
+C:\APRESS\Chapter8\BizTalkUnitTest\BizTalkUnitTest\BizTalkUnitTest\obj\Debug\BizTalkUnitTest.dll
+C:\APRESS\Chapter8\BizTalkUnitTest\BizTalkUnitTest\BizTalkUnitTest\obj\Debug\BizTalkUnitTest.pdb

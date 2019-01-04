@@ -1,0 +1,153 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="9711393a-33e6-42a3-967e-5fcca5311978" LowerBound="1.1" HigherBound="35.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BooksOrders" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="f60677f2-8b01-486f-a0b1-15e4a50a9a70" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_OrdersIn" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="77021b6d-dc4a-4c95-aa2d-675f897a52ac" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="OrdersIn" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="5ee22a30-18d5-45f9-9150-33eaffd992f4" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.32">
+                    <om:Property Name="Ref" Value="BooksOrders.BookOrdersCompleted" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="1bb8bde9-1f6f-4f44-b422-9ea540c0b27c" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_OrdersOut" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="333faf03-1ea0-4c9d-ba3e-1b48610e846c" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="OrdersOut" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="f1cbf05f-d811-4820-b9ff-922e06bd1092" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.32">
+                    <om:Property Name="Ref" Value="BooksOrders.BookOrdersCompleted" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="2fc36fca-171a-428d-a8a0-c619197734d6" ParentLink="Module_ServiceDeclaration" LowerBound="18.1" HigherBound="34.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="RecevingOrders" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="MessageDeclaration" OID="c92c753c-ada2-4000-bb55-a136615ace1e" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="25.1" HigherBound="26.1">
+                <om:Property Name="Type" Value="BooksOrders.BookOrdersCompleted" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgBookOrders" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="0bfd8a68-6510-48a8-87d1-95aa5bca38a0" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="337e21e4-e012-4a4b-a21b-8d9d9bbac2f6" ParentLink="ServiceBody_Statement" LowerBound="28.1" HigherBound="30.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="Port_OrdersIn" />
+                    <om:Property Name="MessageName" Value="msgBookOrders" />
+                    <om:Property Name="OperationName" Value="OrdersIn" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Send" OID="a8fc6247-8bd9-4f58-873c-838fbfe2facb" ParentLink="ServiceBody_Statement" LowerBound="30.1" HigherBound="32.1">
+                    <om:Property Name="PortName" Value="Port_OrdersOut" />
+                    <om:Property Name="MessageName" Value="msgBookOrders" />
+                    <om:Property Name="OperationName" Value="OrdersOut" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="f73eaafe-bbb5-4fbb-826d-584254528548" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="21.1" HigherBound="23.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BooksOrders.PortType_OrdersIn" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_OrdersIn" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="fde34f51-5e03-4a2f-a6c2-91bc962556c2" ParentLink="PortDeclaration_CLRAttribute" LowerBound="21.1" HigherBound="22.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="bd14df8b-c57b-4f3b-a851-900efe26d6d7" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="23.1" HigherBound="25.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BooksOrders.PortType_OrdersOut" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_OrdersOut" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="ebfd5bc9-d117-4e6e-a5d0-c0aca598063f" ParentLink="PortDeclaration_CLRAttribute" LowerBound="23.1" HigherBound="24.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BooksOrders
+{
+    internal porttype PortType_OrdersIn
+    {
+        oneway OrdersIn
+        {
+            BookOrdersCompleted
+        };
+    };
+    internal porttype PortType_OrdersOut
+    {
+        oneway OrdersOut
+        {
+            BookOrdersCompleted
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service RecevingOrders
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements PortType_OrdersIn Port_OrdersIn;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_OrdersOut Port_OrdersOut;
+        message BookOrdersCompleted msgBookOrders;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("337e21e4-e012-4a4b-a21b-8d9d9bbac2f6")]
+            activate receive (Port_OrdersIn.OrdersIn, msgBookOrders);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("a8fc6247-8bd9-4f58-873c-838fbfe2facb")]
+            send (Port_OrdersOut.OrdersOut, msgBookOrders);
+        }
+    }
+}
+

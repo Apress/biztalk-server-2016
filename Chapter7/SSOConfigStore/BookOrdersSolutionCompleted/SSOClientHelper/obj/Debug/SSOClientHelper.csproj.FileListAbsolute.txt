@@ -1,0 +1,5 @@
+C:\BOOK\Module12\SSOConfigStore\BookOrdersSolution\SSOClientHelper\bin\Debug\SSOClientHelper.dll
+C:\BOOK\Module12\SSOConfigStore\BookOrdersSolution\SSOClientHelper\bin\Debug\SSOClientHelper.pdb
+C:\BOOK\Module12\SSOConfigStore\BookOrdersSolution\SSOClientHelper\bin\Debug\Microsoft.BizTalk.Interop.SSOClient.dll
+C:\BOOK\Module12\SSOConfigStore\BookOrdersSolution\SSOClientHelper\obj\Debug\SSOClientHelper.dll
+C:\BOOK\Module12\SSOConfigStore\BookOrdersSolution\SSOClientHelper\obj\Debug\SSOClientHelper.pdb

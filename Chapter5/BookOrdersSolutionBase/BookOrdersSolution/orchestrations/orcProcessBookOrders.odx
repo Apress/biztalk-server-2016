@@ -1,0 +1,309 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="17a6dd44-8e9a-40a6-bd48-9ae935c9daec" LowerBound="1.1" HigherBound="75.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BookOrdersSolution" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="83e75b7a-1a6e-4d8e-9385-81e4807251bf" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_IN" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="e4653285-8bab-412a-9f8a-6233b4d314e5" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_BookOrders" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="4541ae45-48e6-41db-89c5-227ff47a9783" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.39">
+                    <om:Property Name="Ref" Value="BookOrdersSolution.schemas.IncomingBookOrders" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="5cd336a3-c134-4b9f-8c66-e8b4bec0fb15" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="39324a90-1b61-4dff-b68e-a51ea62451bf" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_SendToCRM" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="e86cb843-8d62-4f1c-952b-efca61b251dc" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.42">
+                    <om:Property Name="Ref" Value="BookOrdersSolution.schemas.CRMIncomingBookOrders" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="dcefb250-1e07-4d0a-85be-d3342ad8b916" ParentLink="Module_ServiceDeclaration" LowerBound="18.1" HigherBound="74.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="orcProcessBookOrders" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="84cbe150-1df9-4980-86ae-436689056bb7" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="27.1" HigherBound="28.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="BooksOrderHelper.BooksOrderHelper" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="booksHelper" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="2d51bd57-06fc-4eda-9a39-c34db1066e59" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="25.1" HigherBound="26.1">
+                <om:Property Name="Type" Value="BookOrdersSolution.schemas.IncomingBookOrders" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgOrdersIN" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="147ab23b-9632-4136-b164-a3418191b574" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="26.1" HigherBound="27.1">
+                <om:Property Name="Type" Value="BookOrdersSolution.schemas.CRMIncomingBookOrders" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgToCRM" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="bcf28344-77e5-490a-82ed-a1aa9420bd35" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="e697fc10-04ea-49b1-9407-d505f3da1a41" ParentLink="ServiceBody_Statement" LowerBound="30.1" HigherBound="33.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="Port_IN" />
+                    <om:Property Name="MessageName" Value="msgOrdersIN" />
+                    <om:Property Name="OperationName" Value="Operation_BookOrders" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_BookOrders" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Scope" OID="05bfab7e-31c8-4759-b343-4d810909bf02" ParentLink="ServiceBody_Statement" LowerBound="33.1" HigherBound="72.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope_Main" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="VariableAssignment" OID="1ac8d9fc-7171-44d2-9903-324968515757" ParentLink="ComplexStatement_Statement" LowerBound="38.1" HigherBound="40.1">
+                        <om:Property Name="Expression" Value="booksHelper = new BooksOrderHelper.BooksOrderHelper();" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="InitBooksHelper" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Decision" OID="fd482431-7c2b-4895-ae79-f6bf1e0ac682" ParentLink="ComplexStatement_Statement" LowerBound="40.1" HigherBound="59.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Decide_VIP" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="b83d5572-0940-45a5-ac6e-6338c5885e42" ParentLink="ReallyComplexStatement_Branch" LowerBound="41.21" HigherBound="50.1">
+                            <om:Property Name="Expression" Value="msgOrdersIN(BookOrdersSolution.PropertySchema.isVIPCustomer)==&quot;1&quot;" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Rule_VIP" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Construct" OID="4285a4f3-5a51-4aa7-b7a4-50f2b9338df4" ParentLink="ComplexStatement_Statement" LowerBound="43.1" HigherBound="49.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Congratulate" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Transform" OID="1fe667f9-c0e0-4fbd-8c6c-9b97c66ce366" ParentLink="ComplexStatement_Statement" LowerBound="46.1" HigherBound="48.1">
+                                    <om:Property Name="ClassName" Value="BookOrdersSolution.maps.Map_IncomingMessage_To_CRM_CongratuleMessage" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Transform_1" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="MessagePartRef" OID="8006cad1-5131-46fe-ad4f-92f66182fbdb" ParentLink="Transform_InputMessagePartRef" LowerBound="47.122" HigherBound="47.133">
+                                        <om:Property Name="MessageRef" Value="msgOrdersIN" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_1" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessagePartRef" OID="08e42287-4cbf-437f-b0fe-d7cae9a2c09a" ParentLink="Transform_OutputMessagePartRef" LowerBound="47.40" HigherBound="47.48">
+                                        <om:Property Name="MessageRef" Value="msgToCRM" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_2" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="01805d11-7f84-4af0-815c-fd415ef569cb" ParentLink="Construct_MessageRef" LowerBound="44.35" HigherBound="44.43">
+                                    <om:Property Name="Ref" Value="msgToCRM" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="66bf66e1-2d1e-405d-a247-fc6bee3e5826" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="Construct" OID="e7c52154-8e08-43e8-85ec-d7b391055b63" ParentLink="ComplexStatement_Statement" LowerBound="52.1" HigherBound="58.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="nonVIPCustomer" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Transform" OID="ea0fb64a-8c38-4209-9c37-5fb104468fdb" ParentLink="ComplexStatement_Statement" LowerBound="55.1" HigherBound="57.1">
+                                    <om:Property Name="ClassName" Value="BookOrdersSolution.maps.Map_IncomingBookOrders_To_CRMFormat" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Transform_2" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessagePartRef" OID="dea125e0-3290-4b68-acb9-29e5d50a3e1e" ParentLink="Transform_InputMessagePartRef" LowerBound="56.113" HigherBound="56.124">
+                                        <om:Property Name="MessageRef" Value="msgOrdersIN" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_3" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessagePartRef" OID="64a59132-3657-4525-b1f0-c062da0575a6" ParentLink="Transform_OutputMessagePartRef" LowerBound="56.40" HigherBound="56.48">
+                                        <om:Property Name="MessageRef" Value="msgToCRM" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_4" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="5e668e7f-baeb-410f-a512-8e57a8fafc89" ParentLink="Construct_MessageRef" LowerBound="53.35" HigherBound="53.43">
+                                    <om:Property Name="Ref" Value="msgToCRM" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Send" OID="acfbc6d0-cd8e-4941-b5c6-653573086509" ParentLink="ComplexStatement_Statement" LowerBound="59.1" HigherBound="61.1">
+                        <om:Property Name="PortName" Value="Port_OUT" />
+                        <om:Property Name="MessageName" Value="msgToCRM" />
+                        <om:Property Name="OperationName" Value="Operation_SendToCRM" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Send_ToCRM" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Catch" OID="85b35a3c-7928-40e2-ae8e-f59a02a39a0f" ParentLink="Scope_Catch" LowerBound="64.1" HigherBound="70.1">
+                        <om:Property Name="ExceptionName" Value="exMain" />
+                        <om:Property Name="ExceptionType" Value="System.Exception" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CatchException_ex" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Terminate" OID="cebe0135-663b-476e-83b5-7352c39d9704" ParentLink="Catch_Statement" LowerBound="67.1" HigherBound="69.1">
+                            <om:Property Name="ErrorMessage" Value="exMain.Message;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Terminate_1" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="b1c8c73c-6a95-4f6d-9be1-fb8fa14c645f" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="21.1" HigherBound="23.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BookOrdersSolution.PortType_IN" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_IN" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="5c2a0165-af29-4e21-8006-53e88695fd86" ParentLink="PortDeclaration_CLRAttribute" LowerBound="21.1" HigherBound="22.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="9cfa4f24-c5d9-43ee-afdf-73338187dfb5" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="23.1" HigherBound="25.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BookOrdersSolution.PortType_1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_OUT" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="bc3287b2-3c69-424f-8405-8dc29daceb85" ParentLink="PortDeclaration_CLRAttribute" LowerBound="23.1" HigherBound="24.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BookOrdersSolution
+{
+    internal porttype PortType_IN
+    {
+        oneway Operation_BookOrders
+        {
+            schemas.IncomingBookOrders
+        };
+    };
+    internal porttype PortType_1
+    {
+        oneway Operation_SendToCRM
+        {
+            schemas.CRMIncomingBookOrders
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service orcProcessBookOrders
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements PortType_IN Port_IN;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_1 Port_OUT;
+        message schemas.IncomingBookOrders msgOrdersIN;
+        message schemas.CRMIncomingBookOrders msgToCRM;
+        BooksOrderHelper.BooksOrderHelper booksHelper;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("e697fc10-04ea-49b1-9407-d505f3da1a41")]
+            activate receive (Port_IN.Operation_BookOrders, msgOrdersIN);
+            booksHelper = new BooksOrderHelper.BooksOrderHelper();
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("05bfab7e-31c8-4759-b343-4d810909bf02")]
+            scope
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("1ac8d9fc-7171-44d2-9903-324968515757")]
+                    booksHelper = new BooksOrderHelper.BooksOrderHelper();
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("fd482431-7c2b-4895-ae79-f6bf1e0ac682")]
+                    if (msgOrdersIN(BookOrdersSolution.PropertySchema.isVIPCustomer)=="1")
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("4285a4f3-5a51-4aa7-b7a4-50f2b9338df4")]
+                        construct msgToCRM
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("1fe667f9-c0e0-4fbd-8c6c-9b97c66ce366")]
+                            transform (msgToCRM) = BookOrdersSolution.maps.Map_IncomingMessage_To_CRM_CongratuleMessage (msgOrdersIN);
+                        }
+                    }
+                    else 
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("e7c52154-8e08-43e8-85ec-d7b391055b63")]
+                        construct msgToCRM
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("ea0fb64a-8c38-4209-9c37-5fb104468fdb")]
+                            transform (msgToCRM) = BookOrdersSolution.maps.Map_IncomingBookOrders_To_CRMFormat (msgOrdersIN);
+                        }
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("acfbc6d0-cd8e-4941-b5c6-653573086509")]
+                    send (Port_OUT.Operation_SendToCRM, msgToCRM);
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("85b35a3c-7928-40e2-ae8e-f59a02a39a0f")]
+                    catch (System.Exception exMain)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("cebe0135-663b-476e-83b5-7352c39d9704")]
+                        terminate exMain.Message;;
+                    }
+                }
+            }
+        }
+    }
+}
+

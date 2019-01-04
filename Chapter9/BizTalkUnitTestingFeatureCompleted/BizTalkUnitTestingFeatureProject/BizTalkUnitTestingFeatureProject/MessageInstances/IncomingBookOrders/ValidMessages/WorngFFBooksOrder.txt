@@ -1,0 +1,4 @@
+BOOrderID,CustomerName,OrderDate
+Street         City          PostalC
+BOOKSISBN|Title|Units|Price
+BOOKS|||

@@ -1,0 +1,8 @@
+C:\APRESS\Chapter8\BooksOrderHelperTests\bin\Debug\BooksOrderHelperTests.dll
+C:\APRESS\Chapter8\BooksOrderHelperTests\bin\Debug\BooksOrderHelperTests.pdb
+C:\APRESS\Chapter8\BooksOrderHelperTests\bin\Debug\BooksOrderHelper.dll
+C:\APRESS\Chapter8\BooksOrderHelperTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\APRESS\Chapter8\BooksOrderHelperTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\APRESS\Chapter8\BooksOrderHelperTests\obj\Debug\BooksOrderHelperTests.csprojResolveAssemblyReference.cache
+C:\APRESS\Chapter8\BooksOrderHelperTests\obj\Debug\BooksOrderHelperTests.dll
+C:\APRESS\Chapter8\BooksOrderHelperTests\obj\Debug\BooksOrderHelperTests.pdb

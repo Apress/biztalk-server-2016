@@ -1,0 +1,4 @@
+C:\Users\Administrator\Documents\BOOK\Module5\PropertyGeneratorPipeline\BookPromotedProperties\BookPromotedProperties\BookPromotedProperties\bin\Debug\BookPromotedProperties.dll
+C:\Users\Administrator\Documents\BOOK\Module5\PropertyGeneratorPipeline\BookPromotedProperties\BookPromotedProperties\BookPromotedProperties\bin\Debug\BookPromotedProperties.pdb
+C:\Users\Administrator\Documents\BOOK\Module5\PropertyGeneratorPipeline\BookPromotedProperties\BookPromotedProperties\BookPromotedProperties\obj\Debug\BookPromotedProperties.dll
+C:\Users\Administrator\Documents\BOOK\Module5\PropertyGeneratorPipeline\BookPromotedProperties\BookPromotedProperties\BookPromotedProperties\obj\Debug\BookPromotedProperties.pdb

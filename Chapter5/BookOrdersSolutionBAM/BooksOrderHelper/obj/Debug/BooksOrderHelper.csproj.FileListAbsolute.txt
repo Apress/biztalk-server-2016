@@ -1,0 +1,5 @@
+C:\Users\Administrator\Documents\BOOK\Module11\BookOrdersSolution\BooksOrderHelper\bin\Debug\BooksOrderHelper.dll
+C:\Users\Administrator\Documents\BOOK\Module11\BookOrdersSolution\BooksOrderHelper\bin\Debug\BooksOrderHelper.pdb
+C:\Users\Administrator\Documents\BOOK\Module11\BookOrdersSolution\BooksOrderHelper\obj\Debug\BooksOrderHelper.dll
+C:\Users\Administrator\Documents\BOOK\Module11\BookOrdersSolution\BooksOrderHelper\obj\Debug\BooksOrderHelper.pdb
+C:\Users\Administrator\Documents\BOOK\Module11\BookOrdersSolution\BooksOrderHelper\bin\Debug\BooksOrderHelper.cs

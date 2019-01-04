@@ -1,0 +1,61 @@
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\UnitTestProject.dll
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\UnitTestProject.pdb
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\BizTalkUnitTestingFeatureProject.dll
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.BizTalk.TestTools.dll
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.XLANGs.BaseTypes.dll
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.XLANGs.BizTalk.Engine.dll
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.BizTalk.Pipeline.dll
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.BizTalk.TOM.dll
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\PipelineObjects.dll
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.BizTalk.CommonSettings.dll
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.XLANGs.Engine.dll
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\EnvDTE.dll
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\VSLangProj.dll
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\stdole.dll
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.MSXML.dll
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\BizTalkUnitTestingFeatureProject.pdb
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\EnvDTE.xml
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\VSLangProj.xml
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\obj\Debug\UnitTestProject.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\obj\Debug\UnitTestProject.dll
+C:\Users\Administrator\Documents\BOOK\Module 10\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\obj\Debug\UnitTestProject.pdb
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\UnitTestProject.dll
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\UnitTestProject.pdb
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\BizTalkUnitTestingFeatureProject.dll
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.BizTalk.Pipeline.dll
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.BizTalk.TestTools.dll
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.XLANGs.BaseTypes.dll
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.XLANGs.BizTalk.Engine.dll
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.BizTalk.StreamProcessing.dll
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.BizTalk.FlatFile.Parser.dll
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.XLANGs.RuntimeTypes.dll
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.BizTalk.Streaming.dll
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.BizTalk.Messaging.dll
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.BizTalk.TOM.dll
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\PipelineObjects.dll
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.BizTalk.CommonSettings.dll
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.XLANGs.Engine.dll
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\EnvDTE.dll
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\VSLangProj.dll
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\stdole.dll
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.MSXML.dll
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\BizTalkUnitTestingFeatureProject.pdb
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.VisualStudio.OLE.Interop.xml
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\EnvDTE.xml
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.xml
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.VisualStudio.Shell.Interop.xml
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\VSLangProj.xml
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.xml
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.xml
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\obj\Debug\UnitTestProject.csprojResolveAssemblyReference.cache
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\obj\Debug\UnitTestProject.dll
+C:\APRESS\Chapter8\BizTalkUnitTestingFeature\BizTalkUnitTestingFeatureProject\UnitTestProject\obj\Debug\UnitTestProject.pdb

@@ -1,0 +1,216 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="11e43849-68bd-48f3-95d9-0aa6147b46ec" LowerBound="1.1" HigherBound="46.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="WebServiceBookOrders" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="73741dc3-c277-4196-a0e5-dd58a68a205c" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_Port_WebBookOrders" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="a299d0b6-2762-4081-bada-1eae8f3ce6b2" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="WebBookOrders" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="e4d0dde3-9447-45f3-8d99-bfb5bfef6034" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.29">
+                    <om:Property Name="Ref" Value="WebServiceBookOrders.BookOrderRequest" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="77e57670-7484-4002-8c43-6355989874e6" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="8.31" HigherBound="8.48">
+                    <om:Property Name="Ref" Value="WebServiceBookOrders.BookOrderResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="f9752a3f-7f5c-48bc-a843-96beb0b21028" ParentLink="Module_ServiceDeclaration" LowerBound="11.1" HigherBound="45.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="orcBookOrders" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="MessageDeclaration" OID="980afc7b-edf7-484d-9e48-79708ee97b0c" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="16.1" HigherBound="17.1">
+                <om:Property Name="Type" Value="WebServiceBookOrders.BookOrderRequest" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_Request" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="9d0bbc06-48cd-4472-9587-9610d77fd698" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="17.1" HigherBound="18.1">
+                <om:Property Name="Type" Value="WebServiceBookOrders.BookOrderResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_Response" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="7f999983-9f94-4c7a-be8c-ed4e0af29940" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="57c832a7-816b-4320-8b52-fe023b1a2c3b" ParentLink="ServiceBody_Statement" LowerBound="20.1" HigherBound="22.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="Port_WebBookOrders" />
+                    <om:Property Name="MessageName" Value="Message_Request" />
+                    <om:Property Name="OperationName" Value="WebBookOrders" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Decision" OID="5824dce4-9ffa-42bd-af2a-c8262f9bd762" ParentLink="ServiceBody_Statement" LowerBound="22.1" HigherBound="41.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Decide_VIP" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="DecisionBranch" OID="428140e5-53a3-451c-bfa5-e0add96d23d8" ParentLink="ReallyComplexStatement_Branch" LowerBound="23.13" HigherBound="32.1">
+                        <om:Property Name="Expression" Value="Message_Request.isVIP ==true" />
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="VipRequest" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Construct" OID="b69a3e9a-2777-4896-9849-ec6174afe4f8" ParentLink="ComplexStatement_Statement" LowerBound="25.1" HigherBound="31.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructVIPMessage" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Transform" OID="e3307051-a2ab-4ebb-99e2-b61698a9613e" ParentLink="ComplexStatement_Statement" LowerBound="28.1" HigherBound="30.1">
+                                <om:Property Name="ClassName" Value="WebServiceBookOrders.mapCreateWebResponseVIPCustomer" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="mapVIP" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="MessagePartRef" OID="b50a2fd8-fb91-4cff-a2c8-b8fe89696dac" ParentLink="Transform_InputMessagePartRef" LowerBound="29.106" HigherBound="29.121">
+                                    <om:Property Name="MessageRef" Value="Message_Request" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_1" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessagePartRef" OID="e125eee0-062f-410a-ad44-e81100844b28" ParentLink="Transform_OutputMessagePartRef" LowerBound="29.32" HigherBound="29.48">
+                                    <om:Property Name="MessageRef" Value="Message_Response" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_2" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="f03f18c8-4205-4bfa-be44-13c200f776bb" ParentLink="Construct_MessageRef" LowerBound="26.27" HigherBound="26.43">
+                                <om:Property Name="Ref" Value="Message_Response" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="DecisionBranch" OID="9e617551-5a7e-46f7-88e5-ba7f5ba0927e" ParentLink="ReallyComplexStatement_Branch">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Else" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="Construct" OID="0a61034e-33ba-4035-a0d7-bbdc261bd3e0" ParentLink="ComplexStatement_Statement" LowerBound="34.1" HigherBound="40.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructNonVIPMessage" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Transform" OID="aa8971fb-7ed1-472f-8326-ba1ed83bc48b" ParentLink="ComplexStatement_Statement" LowerBound="37.1" HigherBound="39.1">
+                                <om:Property Name="ClassName" Value="WebServiceBookOrders.mapCreateWebResponseNonVIPCustomer" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="mapNonVIP" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="MessagePartRef" OID="08114444-f0e6-4c45-8c17-d0aa5daad097" ParentLink="Transform_InputMessagePartRef" LowerBound="38.109" HigherBound="38.124">
+                                    <om:Property Name="MessageRef" Value="Message_Request" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_3" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessagePartRef" OID="0cbebe49-eaf3-4c51-beb0-3dce3ecead72" ParentLink="Transform_OutputMessagePartRef" LowerBound="38.32" HigherBound="38.48">
+                                    <om:Property Name="MessageRef" Value="Message_Response" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_4" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="d9482ec2-bbae-4a9e-9f4a-97adb51386a2" ParentLink="Construct_MessageRef" LowerBound="35.27" HigherBound="35.43">
+                                <om:Property Name="Ref" Value="Message_Response" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="6ca87402-238f-4572-b760-23b70748bb2e" ParentLink="ServiceBody_Statement" LowerBound="41.1" HigherBound="43.1">
+                    <om:Property Name="PortName" Value="Port_WebBookOrders" />
+                    <om:Property Name="MessageName" Value="Message_Response" />
+                    <om:Property Name="OperationName" Value="WebBookOrders" />
+                    <om:Property Name="OperationMessageName" Value="Response" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send_Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="ae4e8146-1678-43ae-9be5-0da8ad3015e2" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="14.1" HigherBound="16.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="WebServiceBookOrders.PortType_Port_WebBookOrders" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_WebBookOrders" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="c7e1ea0d-5a10-4757-b2bf-da5b7a7ac61e" ParentLink="PortDeclaration_CLRAttribute" LowerBound="14.1" HigherBound="15.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module WebServiceBookOrders
+{
+    public porttype PortType_Port_WebBookOrders
+    {
+        requestresponse WebBookOrders
+        {
+            BookOrderRequest, BookOrderResponse
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service orcBookOrders
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements PortType_Port_WebBookOrders Port_WebBookOrders;
+        message BookOrderRequest Message_Request;
+        message BookOrderResponse Message_Response;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("57c832a7-816b-4320-8b52-fe023b1a2c3b")]
+            activate receive (Port_WebBookOrders.WebBookOrders, Message_Request);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("5824dce4-9ffa-42bd-af2a-c8262f9bd762")]
+            if (Message_Request.isVIP ==true)
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("b69a3e9a-2777-4896-9849-ec6174afe4f8")]
+                construct Message_Response
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("e3307051-a2ab-4ebb-99e2-b61698a9613e")]
+                    transform (Message_Response) = WebServiceBookOrders.mapCreateWebResponseVIPCustomer (Message_Request);
+                }
+            }
+            else 
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("0a61034e-33ba-4035-a0d7-bbdc261bd3e0")]
+                construct Message_Response
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("aa8971fb-7ed1-472f-8326-ba1ed83bc48b")]
+                    transform (Message_Response) = WebServiceBookOrders.mapCreateWebResponseNonVIPCustomer (Message_Request);
+                }
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("6ca87402-238f-4572-b760-23b70748bb2e")]
+            send (Port_WebBookOrders.WebBookOrders, Message_Response);
+        }
+    }
+}
+

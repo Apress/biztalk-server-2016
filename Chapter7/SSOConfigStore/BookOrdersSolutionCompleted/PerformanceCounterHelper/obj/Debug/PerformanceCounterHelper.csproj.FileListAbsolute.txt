@@ -1,0 +1,15 @@
+C:\Users\Administrator\Documents\BOOK\Module12\BookOrdersSolution\PerformanceCounterHelper\bin\Debug\PerformanceCounterHelper.dll
+C:\Users\Administrator\Documents\BOOK\Module12\BookOrdersSolution\PerformanceCounterHelper\bin\Debug\PerformanceCounterHelper.pdb
+C:\Users\Administrator\Documents\BOOK\Module12\BookOrdersSolution\PerformanceCounterHelper\obj\Debug\PerformanceCounterHelper.dll
+C:\Users\Administrator\Documents\BOOK\Module12\BookOrdersSolution\PerformanceCounterHelper\obj\Debug\PerformanceCounterHelper.pdb
+C:\Users\Administrator\Documents\BOOK\Module12\BookOrdersSolution\PerformanceCounterHelper\obj\Debug\PerformanceCounterHelper.csprojResolveAssemblyReference.cache
+C:\BOOK\Module12\BookOrdersSolution\PerformanceCounterHelper\bin\Debug\PerformanceCounterHelper.dll
+C:\BOOK\Module12\BookOrdersSolution\PerformanceCounterHelper\bin\Debug\PerformanceCounterHelper.pdb
+C:\BOOK\Module12\BookOrdersSolution\PerformanceCounterHelper\obj\Debug\PerformanceCounterHelper.dll
+C:\BOOK\Module12\BookOrdersSolution\PerformanceCounterHelper\obj\Debug\PerformanceCounterHelper.pdb
+C:\BOOK\Module12\BookOrdersSolution\PerformanceCounterHelper\obj\Debug\PerformanceCounterHelper.csprojResolveAssemblyReference.cache
+C:\BOOK\Module12\SSOConfigStore\BookOrdersSolution\PerformanceCounterHelper\bin\Debug\PerformanceCounterHelper.dll
+C:\BOOK\Module12\SSOConfigStore\BookOrdersSolution\PerformanceCounterHelper\bin\Debug\PerformanceCounterHelper.pdb
+C:\BOOK\Module12\SSOConfigStore\BookOrdersSolution\PerformanceCounterHelper\obj\Debug\PerformanceCounterHelper.dll
+C:\BOOK\Module12\SSOConfigStore\BookOrdersSolution\PerformanceCounterHelper\obj\Debug\PerformanceCounterHelper.pdb
+C:\BOOK\Module12\SSOConfigStore\BookOrdersSolution\PerformanceCounterHelper\obj\Debug\PerformanceCounterHelper.csprojResolveAssemblyReference.cache

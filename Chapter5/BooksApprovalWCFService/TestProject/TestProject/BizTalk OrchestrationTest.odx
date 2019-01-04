@@ -1,0 +1,108 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="9f97220a-39bd-4723-826b-1be6ec889c85" LowerBound="1.1" HigherBound="29.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="TestProject" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="095d0887-406a-4130-b841-8286faf6a72c" ParentLink="Module_ServiceDeclaration" LowerBound="4.1" HigherBound="28.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="BizTalk_OrchestrationTest" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="ServiceBody" OID="d9657d6d-07c8-4e76-b65b-19d1f3e2f658" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="65bc1ad8-cef3-4705-bb30-dc63ceb035ac" ParentLink="ServiceBody_Statement" LowerBound="11.1" HigherBound="13.1">
+                    <om:Property Name="Activate" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_1" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="Construct" OID="6ab395e4-a77c-45da-b395-6e910d3b54d7" ParentLink="ServiceBody_Statement" LowerBound="13.1" HigherBound="17.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ConstructMessage_1" />
+                    <om:Property Name="Signal" Value="False" />
+                    <om:Element Type="Transform" OID="b62ceebd-f655-442e-aa61-ba9524969832" ParentLink="ComplexStatement_Statement">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Transform_1" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Decision" OID="9699fc16-1042-428e-8d6f-869f2d5d688c" ParentLink="ServiceBody_Statement" LowerBound="17.1" HigherBound="26.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Decide_1" />
+                    <om:Property Name="Signal" Value="False" />
+                    <om:Element Type="DecisionBranch" OID="113f722f-d9f6-45f0-8030-31b483cfa35e" ParentLink="ReallyComplexStatement_Branch" LowerBound="18.13" HigherBound="21.1">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Rule_1" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="Send" OID="77d7ef11-3a15-44a6-b12d-3f430a162a14" ParentLink="ComplexStatement_Statement">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send_1" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="DecisionBranch" OID="bd39f031-d2da-4b0c-92f8-b3938544c2b3" ParentLink="ReallyComplexStatement_Branch">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Else" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="Send" OID="e5e8bc9d-8362-42ee-91d8-38feefd568cd" ParentLink="ComplexStatement_Statement" LowerBound="23.1" HigherBound="25.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send_2" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="21c42e66-f1fd-41f1-96ae-56b595d08036" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="7.1" HigherBound="8.1">
+                <om:Property Name="Type" Value="TestProject.CustomerIN" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_IN" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="62834590-b30b-42dd-aeb5-c74306f49290" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="8.1" HigherBound="9.1">
+                <om:Property Name="Type" Value="TestProject.CustomerCRMxsd" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_CRM" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module TestProject
+{
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service BizTalk_OrchestrationTest
+    {
+        message CustomerIN Message_IN;
+        message CustomerCRMxsd Message_CRM;
+        body ()
+        {
+
+#error "No Message."
+
+#error "No Constructed Messages."
+
+#error "Errors exist for one or more children."
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("9699fc16-1042-428e-8d6f-869f2d5d688c")]
+            if(true) { 
+#error "No Expression." 
+}
+            else 
+            {
+
+#error "No Message."
+            }
+        }
+    }
+}
+

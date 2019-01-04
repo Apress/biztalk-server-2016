@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PerformanceCounterHelper.PerformanceCounterHelperClass">
+    <Position X="1" Y="1.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAEQAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PerformanceCounterHelperClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

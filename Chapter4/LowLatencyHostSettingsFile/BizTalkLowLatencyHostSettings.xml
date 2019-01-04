@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ExportedGroup>BIZTALK2016:BIZTALKMGMTDB</ExportedGroup>
+  <GroupSettings>
+    <Setting Name="AllowTrackingSettingsImport">True</Setting>
+    <Setting Name="ConfigurationCacheRefreshInterval">60</Setting>
+    <Setting Name="GlobalTrackingOption">1</Setting>
+    <Setting Name="LMSFragmentSize">102400</Setting>
+    <Setting Name="LMSThreshold">1000000</Setting>
+    <Setting Name="PerfCounterCacheRefreshInterval">60</Setting>
+  </GroupSettings>
+  <HostSettings>
+    <Host Name="BizTalkLowLatencyHost">
+      <Setting Name="AllowMultipleResponses">True</Setting>
+      <Setting Name="AuthTrusted">False</Setting>
+      <Setting Name="DBQueueSizeThreshold">100000</Setting>
+      <Setting Name="DBSessionThreshold">0</Setting>
+      <Setting Name="DehydrationBehavior">1</Setting>
+      <Setting Name="DeliveryQueueSize">1000</Setting>
+      <Setting Name="GlobalMemoryThreshold">0</Setting>
+      <Setting Name="HostTracking">False</Setting>
+      <Setting Name="InflightMessageThreshold">5000</Setting>
+      <Setting Name="IsHost32BitOnly">False</Setting>
+      <Setting Name="LegacyWhitespace">False</Setting>
+      <Setting Name="MessageDeliveryMaximumDelay">300000</Setting>
+      <Setting Name="MessageDeliveryOverdriveFactor">125</Setting>
+      <Setting Name="MessageDeliverySampleSpaceSize">100</Setting>
+      <Setting Name="MessageDeliverySampleSpaceWindow">15000</Setting>
+      <Setting Name="MessagePublishMaximumDelay">300000</Setting>
+      <Setting Name="MessagePublishOverdriveFactor">125</Setting>
+      <Setting Name="MessagePublishSampleSpaceSize">100</Setting>
+      <Setting Name="MessagePublishSampleSpaceWindow">15000</Setting>
+      <Setting Name="MessagingMaxReceiveInterval">50</Setting>
+      <Setting Name="MessagingReqRespTTL">3</Setting>
+      <Setting Name="MsgAgentPerfCounterServiceClassID">0</Setting>
+      <Setting Name="ProcessMemoryThreshold">100</Setting>
+      <Setting Name="SubscriptionPauseAt">0</Setting>
+      <Setting Name="SubscriptionResumeAt">0</Setting>
+      <Setting Name="ThreadPoolSize">40</Setting>
+      <Setting Name="ThreadThreshold">0</Setting>
+      <Setting Name="ThrottlingBatchMemoryThresholdPercent">1</Setting>
+      <Setting Name="ThrottlingDeliveryOverride">2</Setting>
+      <Setting Name="ThrottlingDeliveryOverrideSeverity">100</Setting>
+      <Setting Name="ThrottlingLimitToTriggerGC">80</Setting>
+      <Setting Name="ThrottlingPublishOverride">2</Setting>
+      <Setting Name="ThrottlingPublishOverrideSeverity">100</Setting>
+      <Setting Name="ThrottlingSeverityDatabaseSize">1</Setting>
+      <Setting Name="ThrottlingSeverityInflightMessage">75</Setting>
+      <Setting Name="ThrottlingSeverityProcessMemory">500</Setting>
+      <Setting Name="ThrottlingSpoolMultiplier">10</Setting>
+      <Setting Name="ThrottlingTrackingDataMultiplier">10</Setting>
+      <Setting Name="TimeBasedMaxThreshold">1800</Setting>
+      <Setting Name="TimeBasedMinThreshold">1</Setting>
+      <Setting Name="UseDefaultAppDomainForIsolatedAdapter">False</Setting>
+      <Setting Name="XlangMaxReceiveInterval">50</Setting>
+    </Host>
+  </HostSettings>
+  <HostInstanceSettings>
+    <Host Name="BizTalkLowLatencyHost">
+      <Server Name="BizTalk2016">
+        <Setting Name="CLRMaxIOThreads">250</Setting>
+        <Setting Name="CLRMaxWorkerThreads">250</Setting>
+        <Setting Name="CLRMinIOThreads">25</Setting>
+        <Setting Name="CLRMinWorkerThreads">25</Setting>
+        <Setting Name="PhysicalMemoryMaximalUsage">85</Setting>
+        <Setting Name="PhysicalMemoryOptimalUsage">70</Setting>
+        <Setting Name="VirtualMemoryMaximalUsage">85</Setting>
+        <Setting Name="VirtualMemoryOptimalUsage">65</Setting>
+      </Server>
+    </Host>
+  </HostInstanceSettings>
+</Settings>

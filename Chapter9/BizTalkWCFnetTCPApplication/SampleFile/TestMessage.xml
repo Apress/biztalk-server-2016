@@ -1,0 +1,11 @@
+<ns0:Message xmlns:ns0="http://BizTalkTestingSolution.Schema_Input">
+
+<MessageText>This text will be received by the WCF Adapter as a text
+This text will be received by the WCF Adapter as a test
+This text will be received by the WCF Adapter as a test
+This text will be received by the WCF Adapter as a test
+This text will be received by the WCF Adapter as a test
+This text will be received by the WCF Adapter as a test
+</MessageText>
+
+</ns0:Message>

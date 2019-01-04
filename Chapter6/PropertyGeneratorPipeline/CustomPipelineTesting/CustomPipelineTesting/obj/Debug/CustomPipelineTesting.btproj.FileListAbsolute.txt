@@ -1,0 +1,5 @@
+C:\Users\Administrator\Documents\BOOK\Module5\PropertyGeneratorPipeline\CustomPipelineTesting\CustomPipelineTesting\bin\Debug\CustomPipelineTesting.dll
+C:\Users\Administrator\Documents\BOOK\Module5\PropertyGeneratorPipeline\CustomPipelineTesting\CustomPipelineTesting\bin\Debug\CustomPipelineTesting.pdb
+C:\Users\Administrator\Documents\BOOK\Module5\PropertyGeneratorPipeline\CustomPipelineTesting\CustomPipelineTesting\bin\Debug\PropertyGeneratorPipeline.dll
+C:\Users\Administrator\Documents\BOOK\Module5\PropertyGeneratorPipeline\CustomPipelineTesting\CustomPipelineTesting\obj\Debug\CustomPipelineTesting.dll
+C:\Users\Administrator\Documents\BOOK\Module5\PropertyGeneratorPipeline\CustomPipelineTesting\CustomPipelineTesting\obj\Debug\CustomPipelineTesting.pdb
